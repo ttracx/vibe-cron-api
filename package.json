@@ -1,0 +1,27 @@
+{
+  "name": "vibe-cron-api",
+  "version": "1.0.0",
+  "description": "Express/TypeScript API for cron expression parsing",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts"
+  },
+  "keywords": ["cron", "api", "parser", "scheduler"],
+  "author": "ttracx",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cron-parser": "^5.0.6",
+    "cronstrue": "^2.56.0",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.29",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: vibe-cron-api
+    runtime: docker
+    region: oregon
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
